@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var lastScrollTop = 0;
 
     window.addEventListener('scroll', function () {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var scrollTop = window.scrollY || document.documentElement.scrollTop;
 
         // Check the scroll direction
         if (scrollTop > lastScrollTop) {
