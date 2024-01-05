@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Childchapter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin&family=Hammersmith+One&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./pages/ccscience/css/style.css">
+    <script src="https://kit.fontawesome.com/633ffd52b2.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        textpreset1: '#007aa1',
+                        headingtext:'#132a4c',
+                        textpara:"#495b71",
+                        lightblue: '#17d6e3',
+                        buttonorange: '#fd6200',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body style="overflow-x:hidden ;">
+    <!-- navbar start -->
+    <header class="block z-10 bg-white " id="fixednavbar">
+        <div class="flex items-center justify-between w-screen h-[113px] md:px-[36px]" id="navbar">
+            <div class="flex items-center h-full">
+                <img src="./logo/logo.png" alt="" class="ml-7 h-[53px]" id='logo'>
+                <div class="hidden lg:block ml-10 h-full " id="menu">
+                    <div class="flex gap-4  font-black xl:text-lg lg:text-base h-full" id="heading">
+                        <div>
+                            <div id="bombay" onmouseover="showmenu('bombaymenu')"
+                                onmouseleave="closemenu('bombaymenu')">
+                                Comic Storybook</div>
+                            <ul id="bombaymenu" onmouseover="showmenu('bombaymenu')"
+                                onmouseleave="closemenu('bombaymenu')">
+                                <div>Comic Storybook Raise Your Voice Initiative </div>
+                                <li><a href="#"> Lesson 1 : <strong> Say Stop </strong></a></li>
+                                <li><a href="#"> Lesson 2 : <strong> Shout Loud </strong></a></li>
+                                <li><a href="#"> Lesson 3 : <strong> Break The Silence </strong> </a></li>
+                                <li><a href="#"> Lesson 4 : <strong> Tell To The Trusted People </strong> </a></li>
+                                <li><a href="#">Lesson 5 : <strong> Call To Child Helpline </strong></a></li>
+                                <li><a href="#">Lesson 6 : <strong> Stop Bullying </strong></a></li>
+                                <li><a href="#">Lesson 7 : <strong> Hand Signal For Help </strong> </a></li>
+
+                            </ul>
+                        </div>
+                        <div>
+                            <div id="mumbai" onmouseover="showmenu('mumbaimenu')"
+                                onmouseleave="closemenu('mumbaimenu')">
+                                Activities</div>
+                            <ul id="mumbaimenu" onmouseover="showmenu('mumbaimenu')"
+                                onmouseleave="closemenu('mumbaimenu')">
+                                <div>Download Students Activities</div>
+                                <li><a href="#"> Meet The Characters</a></li>
+                                <li><a href="#"> Students Worksheets</a></li>
+                                <li><a href="#"> Coloring Sheets</a></li>
+
+
+                            </ul>
+                        </div>
+                        <div>
+                            <div id="delhi" onmouseover="showmenu('delhimenu')" onmouseleave="closemenu('delhimenu')">
+                                Private Body Parts </div>
+                            <ul id="delhimenu" onmouseover="showmenu('delhimenu')"
+                                onmouseleave="closemenu('delhimenu')">
+                                <div>Private Body Parts </div>
+                                <li><a href="#"> Girls - Private Body Parts </a></li>
+                                <li><a href="#"> Boys - Private Body Parts </a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- sidemenu -->
+            <div class="flex items-center h-full">
+                <div class="hidden lg:block h-full">
+                    <div class="flex gap-4 text-lg xl:text-lg lg:text-base h-full" id="sidemenu">
+                        <div>
+                            <div id="about" onmouseover="showmenu('aboutmenu')" onmouseleave="closemenu('aboutmenu')">
+                                About Us</div>
+                            <ul id="aboutmenu" onmouseover="showmenu('aboutmenu')"
+                                onmouseleave="closemenu('aboutmenu')">
+                                <div>About Us</div>
+                                <li><a href="#">Our Impact</a></li>
+                                <li><a href="#">News & Updates</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Our Offices</a></li>
+                                <li><a href="#">Board of Directors</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Annual Reports</a></li>
+                                <li><a href="#">Partnerships</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div id="global" onmouseover="showmenu('globalmenu')"
+                                onmouseleave="closemenu('globalmenu')">
+                                Partnerships</div>
+                            <ul id="globalmenu" onmouseover="showmenu('globalmenu')"
+                                onmouseleave="closemenu('globalmenu')">
+                                <div>Partnerships</div>
+                                <li><a href="">High Court Of Telangana</a></li>
+                                <li><a href="">Telangana State Education Board</a></li>
+                            </ul>
+
+                        </div>
+                        <div>
+                            <div id="ways" onmouseover="showmenu('waysmenu')" onmouseleave="closemenu('waysmenu')">Ways
+                                to give</div>
+                            <ul id="waysmenu" onmouseover="showmenu('waysmenu')" onmouseleave="closemenu('waysmenu')">
+                                <div>Ways to Give</div>
+                                <li><a href="">Donate Now</a></li>
+                                <li><a href="">Start a Fundraiser</a></li>
+                                <li><a href="">Shop Gifts</a></li>
+                                <li><a href="">Legacy Planning</a></li>
+                                <li><a href="">Partner With Us</a></li>
+                                <li><a href="">Get Involved</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <a href="#"><button
+                    class="bg-yellow-300  hover:bg-yellow-400 px-6 py-2 md:text-lg text-base font-bold rounded-3xl ml-6 mr-5"><a
+                        href="#">Donate</button></a>
+                <div id="responsiveopenmenu"
+                    class=" h-[35px] w-[38px] flex justify-center items-center hover:bg-[#066ba4] rounded-md lg:hidden mr-6"
+                    onclick="showphonemenu()">
+                    <div>
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <!-- menu for phone -->
+
+    <div id="phoneside" class="fixed  top-0 w-[70vw] right-[-70vw] lg:w-0  h-[100%] z-10 overflow-y-scroll">
+        <div class="pt-12 pl-6 text-lg">
+            <div id="responsiveclosemenu"
+                class=" h-[35px] w-[38px] flex justify-center items-center hover:bg-[#066ba4]  rounded-md  mr-6 float-right"
+                onclick="showphonemenu()">
+                <div>
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                </div>
+            </div>
+            <div class=" flex flex-col gap-5 mt-[75px] px-6" id="phnmenu">
+                <div>
+                    <div onclick="toggleSubMenu('phonebombaymenu','phnbombay')" class="flex justify-between"
+                        id="phnbombay"> Comic Storybook<i class="fa-solid fa-caret-down"></i></div>
+                    <ul class="submenu hidden" id="phonebombaymenu">
+                        <li><a href="#"> Lesson 1 : <strong> Say Stop </strong> </a></li>
+                        <li><a href="#"> Lesson 2 : <strong> Shout Loud </strong> </a></li>
+                        <li><a href="#"> Lesson 3 : <strong> Break The Silence </strong> </a></li>
+                        <li><a href="#"> Lesson 4 : <strong> Tell To The Trusted People </strong> </a></li>
+                        <li><a href="#"> Lesson 5 : <strong> Call To Child Helpline </strong> </a></li>
+                        <li><a href="#">Lesson 7 : <strong> Hand Signal For Help </strong> </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div onclick="toggleSubMenu('phonemumbaimenu','phnmumbai')" class="flex justify-between"
+                        id="phnmumbai">Download Students Activities<i class="fa-solid fa-caret-down"></i></div>
+                    <ul class="submenu" id="phonemumbaimenu">
+                        <li><a href="#"> Meet The Characters </a></li>
+                        <li><a href="#"> Students Worksheets </a></li>
+                        <li><a href="#"> Coloring Sheets </a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <div onclick="toggleSubMenu('phonedelhimenu','phndelhi')" class="flex justify-between"
+                        id="phndelhi">Private Body Parts<i class="fa-solid fa-caret-down"></i></div>
+                    <ul class="submenu" id="phonedelhimenu">
+                        <li><a href="#"> Girls - Private Body Parts </a></li>
+                        <li><a href="#"> Boys - Private Body Parts </a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <div onclick="toggleSubMenu('aboutphonemenu','phnabout')" class="flex justify-between"
+                        id="phnabout">About Us<i class="fa-solid fa-caret-down"></i></div>
+                    <ul class="submenu" id="aboutphonemenu">
+                        <li><a href="#">Our Impact</a></li>
+                        <li><a href="#">News & Updates</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Our Offices</a></li>
+                        <li><a href="#">Board of Directors</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Annual Reports</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div onclick="toggleSubMenu('globalphone','phnglobal')" class="flex justify-between" id="phnglobal">
+                        Partnerships <i class="fa-solid fa-caret-down"></i></div>
+                    <ul class="submenu" id="globalphone">
+                        <li><a href="">High Court Of Telangana</a></li>
+                        <li><a href="">Telangana State Education Board</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <div onclick="toggleSubMenu('treatmenu','phnways')" class="flex justify-between" id='phnways'>
+                        Waystogive<i class="fa-solid fa-caret-down"></i></div>
+                    <ul class="submenu" id="treatmenu">
+                        <li><a href="">Donate Now</a></li>
+                        <li><a href="">Start a Fundraiser</a></li>
+                        <li><a href="">Shop Gifts</a></li>
+                        <li><a href="">Legacy Planning</a></li>
+                        <li><a href="">Partner With Us</a></li>
+                        <li><a href="">Get Involved</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- navbar end -->
+    
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- 1st section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 md:pb-11">
+        <div class=" w-full md:order-2 order-1"><img src="./pages/ccscience/images/1.jpg" alt=""></div>
+        <div class=" py-10 px-9 md:order-1 order-2">
+            <h1 class="xl:text-[2.883rem] lg:text-4xl text-headingtext text-3xl font-semibold tracking-wider " style="line-height: 1.3;">Science Today<br>
+                for Better Care Tomorrow</h1>
+            <p class="mt-6 lg:text-2xl text-textpara text-base sm:text-left text-justify">The Science and Engineering team at the Child Mind Institute is dedicated to transforming the lives of children with mental health and learning disorders through the power of scientific discovery. To address the growing crisis in children’s mental health, our researchers work to guide interventions by building a rigorous understanding of the developing brain — an understanding based on reproducible scientific results rather than appealing theories or anecdotal evidence.</p>
+        </div>
+       
+    </div>
+    
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- youtube section  -->
+    <section class="science flex flex-col md:flex-row justify-around gap-7 md:py-24 py-16 md:px-10 px-5 text-white">
+        <div class="basis-2/4 flex justify-center items-center ">
+            <iframe src="https://www.youtube.com/embed/gCf_R_uO6RU?si=QfzEYRhZ5ouwE_w6"
+                title="Raise Your Voice Comic StoryBook Presented to Hon'ble Justice T. Rajani" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen class="lg:w-[640px]  sm:w-2/3 w-[382px] lg:h-[360px] sm:h-full h-[251px] "></iframe>
+        </div>
+        <div>
+            <div class="lg:basis-2/4 w-full flex justify-center self-center order-2 lg:order-2">
+                <div class="w-full sm:px-8 px-4">
+                    <h1 class="lg:text-5xl text-3xl font-semibold tracking-wider ">Five Focus Areas</h1>
+                    <div class=" sm:mt-6 lg:text-2xl mt-4 text-lg  leading-tight">
+                        <p>Our team’s effort to revolutionize brain science is focused on five main areas:</p>
+                        <ul style="list-style: disc;" class=" sm:my-9 my-4 sm:ml-7 ml-4 text-gray-400">
+                            <li  class=""><a href="#fundamental-neuroscience" class="text-white underline hover:no-underline">Fundamental Neuroscience</a></li>
+                            <li  class=""><a href="#advancing-methods" class="text-white underline hover:no-underline">Advancing Methods</a></li>
+                            <li  class=""><a href="#global-open-science" class="text-white underline hover:no-underline">Global Open Science</a></li>
+                            <li  class=""><a href="#applied-technology" class="text-white underline hover:no-underline">Applied Technologies</a></li>
+                            <li  class=""><a href="#training-future-leaders" class="text-white underline hover:no-underline">Training Future Leaders</a></li>
+                        </ul>
+                        <p>It’s an ambitious program in support of an audacious goal, and our children deserve nothing
+                            less.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- 3rd sec -->
+    <section
+        class=" flex md:flex-row flex-col-reverse justify-around text-black gap-7 px-5 md:px-10 lg:px-20 pt-3 text-headingtext">
+
+         <div class="self-center basis-6/12 md:basis-5/12 sm:mx-8 mx-2 flex flex-col gap-4 pb-6">
+            <p class="text-xs text-textpreset1 font-semibold ">SUPPORTING KIDS IN THE COMMUNITY</p>
+            <h1 class="md:text-4xl text-3xl font-extrabold text-headingtext ">School and Community Programs</h1>
+            <p class="mt-6 lg:text-2xl  md:text-xl text-base font-light text-textpara text-justify">Our clinicians are breaking down
+                the barriers to care by bringing mental health
+                services and training to underserved school communities.
+            </p>
+            <div class="text-sm mt-6">
+                <div class="flex gap-4">
+                    <div class="bg-buttonorange w-6 h-6 flex items-center justify-center rounded-full mt-1"><i
+                            class="fa-solid fa-check" style="color: #ffffff;"></i></div>
+                    <a href="#" class="text-textpreset1 underline hover:no-underline">Clinical centers in New York City & San Francisco Bay Area</a>
+                </div>
+                <div class="mt-5 flex gap-4">
+                    <div class="bg-buttonorange w-6 h-6 flex items-center justify-center rounded-full mt-1"><i
+                            class="fa-solid fa-check" style="color: #ffffff;"></i></div><a href="#" class="text-textpreset1 underline hover:no-underline">Supported by fees for
+                    service, with financial aid
+                    available</a>
+                </div>
+            </div>
+
+            <a href="#"> <button class="px-7 py-4 rounded-full bg-buttonorange text-white font-semibold w-fit">learn More</button></a>
+
+
+        </div>
+        <div class="basis-6/12 grid place-items-center"> <img src="./pages/ccscience/images/section image.jpg" class="w-full">
+        </div>
+
+    </section>
+    <!-- explore -->
+    <div class="mx-8 md:mx-32 explores">
+
+        <div class="flex justify-center items-center mt-12 mb-3 space-x-6">
+            <div class="border-b border-gray-300 flex-grow"></div>
+            <div class="flex-shrink-0 text-center font-bold uppercase text-gray-600 text-lg tracking-wider">
+                Explore Care</div>
+            <div class="border-b border-gray-300 flex-grow"></div>
+        </div>
+        <!--  -->
+        <div class="md:flex md:space-x-10 justify-center mision-area-btm ">
+            <div class="md:w-1/3 py-4 josh-js banner animate__animated"
+                style="visibility: visible; animation-name: fadeIn; animation-delay: 0s;">
+                <div class="h-full">
+                    <a class="block text-lg font-bold mb-2 animated-hover-intent" href="#">
+                        <div class="animated-zoom-image animated-zoom-image--105 h-48">
+                            <img class="duration-500 w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2022/10/Intensive-OCD-Program-640x427.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex justify-between pt-5 pb-2 animated-border-bottom animated-border-bottom--bg-gray-200 animated-border-bottom--fg-teal-500 animated-border-bottom--sm text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Intensive OCD Program</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-base">
+                        <div>
+                            An immersive, one to four week intensive to jumpstart a child’s OCD treatment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 py-4 josh-js banner animate__animated"
+                style="visibility: visible; animation-name: fadeIn; animation-delay: 0.15s;">
+                <div class="h-full">
+                    <a class="block text-lg font-bold mb-2 animated-hover-intent" href="#">
+                        <div class="animated-zoom-image animated-zoom-image--105 h-48">
+                            <img class="duration-500 w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2023/08/Emotion-Detectives-Group-640x440.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex justify-between pt-5 pb-2 animated-border-bottom animated-border-bottom--bg-gray-200 animated-border-bottom--fg-teal-500 animated-border-bottom--sm text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Emotion Detectives: Help Your Child with Big Emotions</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-base">
+                        <div>
+                            Build your child's emotional awareness and ability to cope with uncomfortable emotions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 py-4">
+                <div class="h-full">
+                    <a class="block text-lg font-bold mb-2" href="#">
+                        <div class="h-48">
+                            <img class="w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2022/10/Brave-Buddies-smaller-640x320.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex justify-between pt-5 pb-2 text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Intensive Selective Mutism Program</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-base">
+                        <div>
+                            Designed to help children diagnosed with selective mutism overcome their anxiety and speak
+                            in any setting.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- 4th sec -->
+    <section
+        class=" flex md:flex-row flex-col justify-around text-black gap-7 px-5 md:px-10 lg:px-20 pt-3 ] text-headingtext">
+        <div class="basis-6/12 grid place-items-center"> <img src="./pages/ccscience/images/section image.jpg" class="w-full">
+        </div>
+         <div class="self-center basis-6/12 md:basis-5/12 sm:mx-8 mx-2 flex flex-col gap-4 pb-6">
+            <p class="text-xs text-textpreset1 font-semibold ">SUPPORTING KIDS IN THE COMMUNITY</p>
+            <h1 class="md:text-4xl text-3xl font-extrabold text-headingtext ">School and Community Programs</h1>
+            <p class="mt-6 lg:text-2xl  md:text-xl text-base font-light text-textpara text-justify">Our clinicians are breaking down
+                the barriers to care by bringing mental health
+                services and training to underserved school communities.
+            </p>
+            <div class="text-sm mt-6">
+                <div class="flex gap-4">
+                    <div class="bg-buttonorange w-6 h-6 flex items-center justify-center rounded-full mt-1"><i
+                            class="fa-solid fa-check" style="color: #ffffff;"></i></div>
+                    <a href="#" class="text-textpreset1 underline hover:no-underline">Clinical centers in New York City & San Francisco Bay Area</a>
+                </div>
+                <div class="mt-5 flex gap-4">
+                    <div class="bg-buttonorange w-6 h-6 flex items-center justify-center rounded-full mt-1"><i
+                            class="fa-solid fa-check" style="color: #ffffff;"></i></div><a href="#" class="text-textpreset1 underline hover:no-underline">Supported by fees for
+                    service, with financial aid
+                    available</a>
+                </div>
+            </div>
+
+            <a href="#"> <button class="px-7 py-4 rounded-full bg-buttonorange text-white font-semibold w-fit">learn More</button></a>
+
+
+        </div>
+
+
+    </section>
+    <div class="mx-8 md:mx-32 explores">
+
+        <div class="flex justify-center items-center mt-12 mb-3 space-x-6">
+            <div class="border-b border-gray-300 flex-grow"></div>
+            <div class="flex-shrink-0 text-center font-bold uppercase text-gray-600 text-lg tracking-wider">
+                Explore Care</div>
+            <div class="border-b border-gray-300 flex-grow"></div>
+        </div>
+        <!--  -->
+        <div class="md:flex md:space-x-10 justify-center mision-area-btm ">
+            <div class="md:w-1/3 py-4 josh-js banner animate__animated"
+                style="visibility: visible; animation-name: fadeIn; animation-delay: 0s;">
+                <div class="h-full">
+                    <a class="block text-lg font-bold mb-2 animated-hover-intent" href="#">
+                        <div class="animated-zoom-image animated-zoom-image--105 h-48">
+                            <img class="duration-500 w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2022/10/Intensive-OCD-Program-640x427.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex justify-between pt-5 pb-2 animated-border-bottom animated-border-bottom--bg-gray-200 animated-border-bottom--fg-teal-500 animated-border-bottom--sm text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Intensive OCD Program</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-base">
+                        <div>
+                            An immersive, one to four week intensive to jumpstart a child’s OCD treatment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 py-4 josh-js banner animate__animated"
+                style="visibility: visible; animation-name: fadeIn; animation-delay: 0.15s;">
+                <div class="h-full">
+                    <a class="block text-lg font-bold mb-2 animated-hover-intent" href="#">
+                        <div class="animated-zoom-image animated-zoom-image--105 h-48">
+                            <img class="duration-500 w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2023/08/Emotion-Detectives-Group-640x440.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex justify-between pt-5 pb-2 animated-border-bottom animated-border-bottom--bg-gray-200 animated-border-bottom--fg-teal-500 animated-border-bottom--sm text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Emotion Detectives: Help Your Child with Big Emotions</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-base">
+                        <div>
+                            Build your child's emotional awareness and ability to cope with uncomfortable emotions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 py-4">
+                <div class="h-full">
+                    <a class="block text-lg font-bold mb-2" href="#">
+                        <div class="h-48">
+                            <img class="w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2022/10/Brave-Buddies-smaller-640x320.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex justify-between pt-5 pb-2 text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Intensive Selective Mutism Program</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-base">
+                        <div>
+                            Designed to help children diagnosed with selective mutism overcome their anxiety and speak
+                            in any setting.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- 5th section -->
+    <section
+        class=" flex md:flex-row flex-col-reverse justify-around  gap-7 px-5 md:px-10 lg:px-20 pt-3 text-headingtext">
+
+        <div class="self-center basis-6/12 md:basis-5/12 sm:mx-8 mx-2 flex flex-col gap-4 pb-6">
+            <p class="text-xs text-textpreset1 font-semibold ">SUPPORTING KIDS IN THE COMMUNITY</p>
+            <h1 class="md:text-4xl text-3xl font-extrabold text-headingtext ">School and Community Programs</h1>
+            <p class="mt-6 lg:text-2xl  md:text-xl text-base font-light text-textpara text-justify">Our clinicians are breaking down
+                the barriers to care by bringing mental health
+                services and training to underserved school communities.
+            </p>
+            <div class="text-sm mt-6">
+                <div class="flex gap-4">
+                    <div class="bg-buttonorange w-6 h-6 flex items-center justify-center rounded-full mt-1"><i
+                            class="fa-solid fa-check" style="color: #ffffff;"></i></div>
+                    <a href="#" class="text-textpreset1 underline hover:no-underline">Clinical centers in New York City & San Francisco Bay Area</a>
+                </div>
+                <div class="mt-5 flex gap-4">
+                    <div class="bg-buttonorange w-6 h-6 flex items-center justify-center rounded-full mt-1"><i
+                            class="fa-solid fa-check" style="color: #ffffff;"></i></div><a href="#" class="text-textpreset1 underline hover:no-underline">Supported by fees for
+                    service, with financial aid
+                    available</a>
+                </div>
+            </div>
+
+            <a href="#"> <button class="px-7 py-4 rounded-full bg-buttonorange text-white font-semibold w-fit">learn More</button></a>
+
+
+        </div>
+        <div class="basis-6/12 grid place-items-center"> <img src="./pages/ccscience/images/section image.jpg" class="w-full">
+        </div>
+
+    </section>
+    <div class="mx-8 md:mx-32 explores">
+
+        <div class="flex justify-center items-center mt-12 mb-3 space-x-6">
+            <div class="border-b border-gray-300 flex-grow"></div>
+            <div class="flex-shrink-0 text-center font-bold uppercase text-gray-600 text-lg tracking-wider">
+                Explore Care</div>
+            <div class="border-b border-gray-300 flex-grow"></div>
+        </div>
+        <!--  -->
+        <div class="md:flex md:space-x-10 justify-center mision-area-btm ">
+            <div class="md:w-1/3 py-4 josh-js banner animate__animated"
+                style="visibility: visible; animation-name: fadeIn; animation-delay: 0s;">
+                <div class="h-full">
+                    <a class="block text-lg font-bold mb-2 animated-hover-intent" href="#">
+                        <div class="animated-zoom-image animated-zoom-image--105 h-48">
+                            <img class="duration-500 w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2022/10/Intensive-OCD-Program-640x427.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex justify-between pt-5 pb-2 animated-border-bottom animated-border-bottom--bg-gray-200 animated-border-bottom--fg-teal-500 animated-border-bottom--sm text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Intensive OCD Program</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-base">
+                        <div>
+                            An immersive, one to four week intensive to jumpstart a child’s OCD treatment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 py-4 josh-js banner animate__animated"
+                style="visibility: visible; animation-name: fadeIn; animation-delay: 0.15s;">
+                <div class="h-full">
+                    <a class="block text-lg font-bold mb-2 animated-hover-intent" href="#">
+                        <div class="animated-zoom-image animated-zoom-image--105 h-48">
+                            <img class="duration-500 w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2023/08/Emotion-Detectives-Group-640x440.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex justify-between pt-5 pb-2 animated-border-bottom animated-border-bottom--bg-gray-200 animated-border-bottom--fg-teal-500 animated-border-bottom--sm text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Emotion Detectives: Help Your Child with Big Emotions</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-base">
+                        <div>
+                            Build your child's emotional awareness and ability to cope with uncomfortable emotions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 py-4">
+                <div class="h-full">
+                    <a class="block text-lg font-bold mb-2" href="#">
+                        <div class="h-48">
+                            <img class="w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2022/10/Brave-Buddies-smaller-640x320.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex justify-between pt-5 pb-2 text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Intensive Selective Mutism Program</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-base">
+                        <div>
+                            Designed to help children diagnosed with selective mutism overcome their anxiety and speak
+                            in any setting.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- 6th section -->
+    <section
+        class=" flex md:flex-row flex-col justify-around  gap-7 px-5 md:px-10 lg:px-20 pt-3  ">
+        <div class="basis-6/12 grid place-items-center"> <img src="./pages/ccscience/images/section image.jpg" class="w-full">
+        </div>
+         <div class="self-center basis-6/12 md:basis-5/12 sm:mx-8 mx-2 flex flex-col gap-4 pb-6">
+            <p class="text-xs text-textpreset1 font-semibold ">SUPPORTING KIDS IN THE COMMUNITY</p>
+            <h1 class="md:text-4xl text-3xl font-extrabold text-headingtext ">School and Community Programs</h1>
+            <p class="mt-6 lg:text-2xl  md:text-xl text-base font-light text-textpara text-justify">Our clinicians are breaking down
+                the barriers to care by bringing mental health
+                services and training to underserved school communities.
+            </p>
+            <div class="text-sm mt-6">
+                <div class="flex gap-4">
+                    <div class="bg-buttonorange w-6 h-6 flex items-center justify-center rounded-full mt-1"><i
+                            class="fa-solid fa-check" style="color: #ffffff;"></i></div>
+                    <a href="#" class="text-textpreset1 underline hover:no-underline">Clinical centers in New York City & San Francisco Bay Area</a>
+                </div>
+                <div class="mt-5 flex gap-4">
+                    <div class="bg-buttonorange w-6 h-6 flex items-center justify-center rounded-full mt-1"><i
+                            class="fa-solid fa-check" style="color: #ffffff;"></i></div><a href="#" class="text-textpreset1 underline hover:no-underline">Supported by fees for
+                    service, with financial aid
+                    available</a>
+                </div>
+            </div>
+
+            <a href="#"> <button class="px-7 py-4 rounded-full bg-buttonorange text-white font-semibold w-fit">learn More</button></a>
+
+
+        </div>
+
+    </section>
+    <div class="mx-8 md:mx-32 explores">
+        <div class="flex justify-center items-center mt-12 mb-3 space-x-6">
+            <div class="border-b border-gray-300 flex-grow"></div>
+            <div class="flex-shrink-0 text-center font-bold uppercase text-gray-600 text-lg tracking-wider">
+                Explore Care</div>
+            <div class="border-b border-gray-300 flex-grow"></div>
+        </div>
+        <div class="md:flex md:space-x-10 justify-center mision-area-btm">
+            <div class="md:w-1/3 py-4 josh-js banner animate__animated"
+                style="visibility: visible; animation-name: fadeIn; animation-delay: 0s;">
+                <div class="h-full">
+                    <a class="block text-preset-6 font-bold mb-2 animated-hover-intent"
+                        href="#">
+                        <div class="animated-zoom-image animated-zoom-image--105 h-48">
+                            <img class="duration-500 w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2022/05/Mind-Logger-blog-image-640x320.jpg"
+                                alt="Results From Mobile App Development Competition">
+                        </div>
+
+                        <div
+                            class="flex justify-between pt-5 pb-2 animated-border-bottom animated-border-bottom--bg-gray-200 animated-border-bottom--fg-teal-500 animated-border-bottom--sm text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Results From Mobile App Development Competition</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-preset-7">
+                        <div>
+                            Inspiring prototypes for youth mental health support from Child Mind Institute research
+                            assistants.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- section 7 -->
+    <section
+        class=" flex md:flex-row flex-col-reverse justify-around  gap-7 px-5 md:px-10 lg:px-20 pt-3 text-headingtext">
+
+         <div class="self-center basis-6/12 md:basis-5/12 sm:mx-8 mx-2 flex flex-col gap-4 pb-6">
+            <p class="text-xs text-textpreset1 font-semibold ">SUPPORTING KIDS IN THE COMMUNITY</p>
+            <h1 class="md:text-4xl text-3xl font-extrabold text-headingtext ">School and Community Programs</h1>
+            <p class="mt-6 lg:text-2xl  md:text-xl text-base font-light text-textpara text-justify">Our clinicians are breaking down
+                the barriers to care by bringing mental health
+                services and training to underserved school communities.
+            </p>
+            <div class="text-sm mt-6">
+                <div class="flex gap-4">
+                    <div class="bg-buttonorange w-6 h-6 flex items-center justify-center rounded-full mt-1"><i
+                            class="fa-solid fa-check" style="color: #ffffff;"></i></div>
+                    <a href="#" class="text-textpreset1 underline hover:no-underline">Clinical centers in New York City & San Francisco Bay Area</a>
+                </div>
+                <div class="mt-5 flex gap-4">
+                    <div class="bg-buttonorange w-6 h-6 flex items-center justify-center rounded-full mt-1"><i
+                            class="fa-solid fa-check" style="color: #ffffff;"></i></div><a href="#" class="text-textpreset1 underline hover:no-underline">Supported by fees for
+                    service, with financial aid
+                    available</a>
+                </div>
+            </div>
+
+            <a href="#"> <button class="px-7 py-4 rounded-full bg-buttonorange text-white font-semibold w-fit">learn More</button></a>
+
+
+        </div>
+        <div class="basis-6/12 grid place-items-center"> <img src="./pages/ccscience/images/section image.jpg" class="w-full">
+        </div>
+
+    </section>
+
+    <div class="mx-8 md:mx-32 explores">
+
+        <div class="flex justify-center items-center mt-12 mb-3 space-x-6">
+            <div class="border-b border-gray-300 flex-grow"></div>
+            <div class="flex-shrink-0 text-center font-bold uppercase text-gray-600 text-lg tracking-wider">
+                Explore Care</div>
+            <div class="border-b border-gray-300 flex-grow"></div>
+        </div>
+        <!--  -->
+        <div class="md:flex md:space-x-10 justify-center mision-area-btm ">
+            <div class="md:w-1/3 py-4 josh-js banner animate__animated"
+                style="visibility: visible; animation-name: fadeIn; animation-delay: 0s;">
+                <div class="h-full">
+                    <a class="block text-lg font-bold mb-2 animated-hover-intent" href="#">
+                        <div class="animated-zoom-image animated-zoom-image--105 h-48">
+                            <img class="duration-500 w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2022/10/Intensive-OCD-Program-640x427.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex justify-between pt-5 pb-2 animated-border-bottom animated-border-bottom--bg-gray-200 animated-border-bottom--fg-teal-500 animated-border-bottom--sm text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Intensive OCD Program</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-base">
+                        <div>
+                            An immersive, one to four week intensive to jumpstart a child’s OCD treatment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 py-4 josh-js banner animate__animated"
+                style="visibility: visible; animation-name: fadeIn; animation-delay: 0.15s;">
+                <div class="h-full">
+                    <a class="block text-lg font-bold mb-2 animated-hover-intent" href="#">
+                        <div class="animated-zoom-image animated-zoom-image--105 h-48">
+                            <img class="duration-500 w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2023/08/Emotion-Detectives-Group-640x440.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex justify-between pt-5 pb-2 animated-border-bottom animated-border-bottom--bg-gray-200 animated-border-bottom--fg-teal-500 animated-border-bottom--sm text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Emotion Detectives: Help Your Child with Big Emotions</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-base">
+                        <div>
+                            Build your child's emotional awareness and ability to cope with uncomfortable emotions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 py-4">
+                <div class="h-full">
+                    <a class="block text-lg font-bold mb-2" href="#">
+                        <div class="h-48">
+                            <img class="w-full h-full object-cover"
+                                src="https://childmind.org/wp-content/uploads/2022/10/Brave-Buddies-smaller-640x320.jpg"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex justify-between pt-5 pb-2 text-gray-600 hover:text-teal-500 transition-colors duration-300">
+                            <span class="flex-grow">Intensive Selective Mutism Program</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="flex-shrink-0 h-6 w-6 inline-block font-bold ml-2 text-teal-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="presentation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="flex flex-col justify-between mt-4 pb-4 text-gray-500 text-base">
+                        <div>
+                            Designed to help children diagnosed with selective mutism overcome their anxiety and speak
+                            in any setting.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- ourteam -->
+
+    <div class="my-16">
+        <div class="flex flex-col justify-center items-center mt-16 mx-5" id="team">
+            <h1 class="text-center md:text-5xl text-4xl font-extrabold text-headingtext ">Our Science Team</h1>
+            <p class=" text-center sm:text-2xl text-lg lg:w-6/12 py-6 text-textpara">Our team of researchers and engineers brings together expertise
+                across a
+                diverse range of disciplines, enabling the kind of innovative collaborations that speed the pace of
+                discovery.</p>
+        </div>
+        <div class=" grid md:grid-cols-6 grid-cols-3 md:px-12 py-8 place-items-center">
+            <div class="icon">
+                <div class="persondesp">
+                    <img src="./pages/ccscience/images/profile.png" alt="" class=" w-[84px] h-[84px] rounded-full border-2 imgicon"
+                        onclick="founder('profile1','icoimg1')"
+                        id="icoimg1">
+                    <div class="profile  text-xs hidden top-0 left-12" id="profile1">
+                        <h1>ADAM SANTORELLI, PHD</h1>
+
+                        <p>Scientific Software Engineering Generalist, Center for Strategic Data Initiatives (SDI)</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="persondesp">
+                    <img src="./pages/ccscience/images/profile.png" alt="" class=" w-[84px] h-[84px] rounded-full border-2 imgicon"
+                        onclick="founder('profile2','icoimg2')"
+                        id="icoimg2">
+                    <div class="profile  text-xs md:left-[-100%] left-[-72%] hidden" id="profile2">
+                        <h1>ADAM SANTORELLI, PHD</h1>
+
+                        <p>Scientific Software Engineering Generalist, Center for Strategic Data Initiatives (SDI)</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="persondesp">
+                    <img src="./pages/ccscience/images/profile.png" alt="" class=" w-[84px] h-[84px] rounded-full border-2 imgicon"
+                        onclick="founder('profile3','icoimg3')"
+                        id="icoimg3">
+                    <div class="profile text-xs md:left-[-100%] md:top-auto top-0 right-14 hidden" id="profile3">
+                        <h1>ADAM SANTORELLI, PHD</h1>
+
+                        <p>Scientific Software Engineering Generalist, Center for Strategic Data Initiatives (SDI)</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="persondesp">
+                    <img src="./pages/ccscience/images/profile.png" alt="" class=" w-[84px] h-[84px] rounded-full border-2 imgicon"
+                        onclick="founder('profile4','icoimg4')"
+                        id="icoimg4">
+                    <div class="profile  text-xs md:left-[-100%]  md:top-auto top-0 left-12 hidden" id="profile4">
+                        <h1>ADAM SANTORELLI, PHD</h1>
+
+                        <p>Scientific Software Engineering Generalist, Center for Strategic Data Initiatives (SDI)</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="persondesp">
+                    <img src="./pages/ccscience/images/profile.png" alt="" class=" w-[84px] h-[84px] rounded-full border-2 imgicon"
+                        onclick="founder('profile5','icoimg5')"
+                        id="icoimg5">
+                    <div class="profile md:left-[-100%] left-[-72%] text-xs hidden" id="profile5">
+                        <h1>ADAM SANTORELLI, PHD</h1>
+
+                        <p>Scientific Software Engineering Generalist, Center for Strategic Data Initiatives (SDI)</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="persondesp">
+                    <img src="./pages/ccscience/images/profile.png" alt="" class=" w-[84px] h-[84px] rounded-full border-2 imgicon"
+                        onclick="founder('profile6','icoimg6')"
+                        id="icoimg6">
+                    <div class="profile top-0 right-14 text-xs hidden" id="profile6">
+                        <h1>ADAM SANTORELLI, PHD</h1>
+
+                        <p>Scientific Software Engineering Generalist, Center for Strategic Data Initiatives (SDI)</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button
+            class="px-7 py-3 block mx-auto rounded-3xl md:rounded-full bg-lightblue hover:bg-headingtext hover:text-white font-bold ">Meet our teams</button>
+    </div>
+
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- last sec -->
+    <div
+        class=" flex md:flex-row flex-col justify-around  gap-7 px-5 md:px-10 lg:px-20 pt-3  bg-[#f6f7fb]">
+        <div class="basis-5/12 grid place-items-center"> <img src="./pages/ccscience/images/3rd section.webp" class="w-full">
+        </div>
+        <div class="self-center basis-7/12 md:basis-5/12 mx-8 flex flex-col gap-4 pb-6">
+            <p class="text-xs text-textpreset1 font-semibold t">SUPPORTING KIDS IN THE COMMUNITY</p>
+            <h1 class="md:text-5xl text-3xl font-extrabold text-headingtex">School and Community Programs</h1>
+            <p class="mt-6 lg:text-2xl  md:text-xl text-base font-light text-textpara">Our clinicians are breaking down
+                the barriers to care by bringing mental health
+                services and training to underserved school communities.</p>
+            <a href="#"><button class="px-7 py-4 rounded-full bg-lightblue text-black hover:bg-headingtext hover:text-white font-semibold w-fit">learn More</button>
+            </a>
+        </div>
+
+
+    </div>
+
+    
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- newsletter -->
+    <div class="flex flex-col-reverse md:flex-row justify-between bg-[#faf9f5] md:h-[478px]">
+        <div class="flex flex-col justify-center items-center gap-9 p-5 sm:p-14">
+            <h1 class="md:text-[51px] text-2xl leading-tight font-bold text-center text-[#002b59]">Subscribe to Our
+                Newsletters</h1>
+            <div class="self-start flex md:flex-row flex-col w-full  mt-3 l gap-4">
+                <input type="text" placeholder="Enter email" class="h-16 w-full md:w-60 lg:w-80 p-4">
+                <a href=""><button
+                        class="px-7 py-3 rounded-3xl md:rounded-full bg-yellow-300  hover:bg-yellow-400 font-bold">Sign
+                        Up</button></a>
+            </div>
+        </div>
+        <div class="basis-6/12 hidden md:block"><img src="./pages/ccscience/images/5child.webp" alt=""></div>
+    </div>
+    
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- footer -->
+    <footer>
+        <div class=" pt-12 bg-[#002b59] text-white">
+            <div class="grid grid-cols-2 xl:grid-cols-6 lg:grid-cols-3 gap-6 lg:px-24 pb-7 px-10 footermenu  ">
+                <div>
+                    <ul>
+                        <li><a href="#">CARE</a></li>
+                        <li><a href="#">What We Treat</a></li>
+                        <li><a href="#">Where We Are</a></li>
+                        <li><a href="#">Why We’re Different</a></li>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Request an Appointment</a></li>
+                        <li><a href="#">Cost & Financial Aid</a></li>
+                        <li><a href="#">Care Journey</a></li>
+                        <li><a href="#">Connect to Care</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">EDUCATION</a></li>
+                        <li><a href="#">Family Resource Center</a></li>
+                        <li><a href="#">Parenting Guides</a></li>
+                        <li><a href="#">Symptom Checker</a></li>
+                        <li><a href="#">Explore Topics</a></li>
+                        <li><a href="#">Ask an Expert</a></li>
+                        <li><a href="#">Awareness Campaigns</a></li>
+                        <li><a href="#">Developmental Milestones</a></li>
+                        <li><a href="#">ADHD Test for Kids</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">SCHOOL AND COMMUNITY</a></li>
+                        <li><a href="#">Direct Care Programs</a></li>
+                        <li><a href="#">Professional Training Programs</a></li>
+                        <li><a href="#">Healthy Minds, Thriving Kids</a></li>
+                        <li><a href="#">Program Outcomes</a></li>
+                        <li><a href="#">Guiding Values</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">SCIENCE</a></li>
+                        <li><a href="#">Fundamental Neuroscience</a></li>
+                        <li><a href="#">Advancing Methods</a></li>
+                        <li><a href="#">Global Open Science</a></li>
+                        <li><a href="#">Applied Technologies</a></li>
+                        <li><a href="#">Training Future Leaders</a></li>
+                        <li><a href="#">Scientific Research Council</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">Our Impact</a></li>
+                        <li><a href="#">News & Updates</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Our Offices</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Annual Reports</a></li>
+                        <li><a href="#">Editorial Mission</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">WAYS TO GIVE</a></li>
+                        <li><a href="">Donate</a></li>
+                        <li><a href="">Start a Fundraiser</a></li>
+                        <li><a href="">Shop Gifts</a></li>
+                        <li><a href="">Legacy Planning</a></li>
+                        <li><a href="">Partner With Us</a></li>
+                        <li><a href="">Get Involved</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <hr>
+            <div class="flex justify-center flex-col md:flex-row py-7 md:px-0 px-5 gap-10 sm:gap-20">
+                <div class="md:w-[288px]">
+                    <h2 class="font-bold">SUPPORT OUR WORK</h2>
+                    <p class="text-sm  text-justify font-light">We’re proud to be recognized as a financially
+                        accountable and transparent organization.</p>
+                </div>
+                <div class="flex justify-evenly md:justify-between gap-3 sm:gap-7 ">
+                    <img src="./pages/ccscience/images/charity-navigator-3-star-logo.jpg" alt="" class="sm:h-16 w-auto h-10">
+                    <img src="./pages/ccscience/images/candid-seal-platinum-2023-final.jpg" alt="" class="sm:h-16 w-auto h-10">
+                    <img src="./pages/ccscience/images/GreatNonprofits.webp" alt="" class="sm:h-16 w-auto h-10">
+                </div>
+            </div>
+            <div class="flex items-center justify-around md:flex-row flex-col py-2 sm:py-8 my-8 sm:my-16 bg-[#006997]">
+                <div><span class="font-bold">General Inquiries?</span>
+                    Call 212.308.3118</div>
+                <div class="flex gap-5  items-center  md:flex-row flex-col icon">
+                    <div>follow us</div>
+                    <div class="flex justify-evenly gap-5 sm:gap-7">
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-threads"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center ">
+            <div class="flex justify-center flex-col items-center sm:p-7 p-1 md:w-2/3">
+                <p class="text-center text-xs">©2023 Child Mind Institute, Inc., a tax-exempt charitable organization
+                    (tax
+                    identification number
+                    80-0478843) under Section 501(c)(3) of the Internal Revenue Code. All rights reserved.
+
+                <p class="text-center text-xs">The Child Mind Institute Family Resource Center was made possible by a
+                    generous grant from the
+                    Morgan
+                    Stanley Foundation.
+                    Created by Constructive.</p>
+                </p>
+                <ul class="flex gap-5 justify-center  sm:gap-7 mt-6 text-xs sm:text-sm underline flex-wrap">
+                    <li><a href="">Terms of use</a></li>
+                    <li><a href="">Online Privacy Statement</a></li>
+                    <li><a href="">Donor Privacy Policy</a></li>
+                    <li><a href="">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="./javascript/menufunctionalitynav.js"></script>
+    <script src="./javascript/menuscrollfunctionality.js"></script>
+    <script src="./javascript/phonemenu.js"></script>
+    <script src="./javascript/founderdesp.js"></script>
+
+
+
+
+</body>
+
+</html>

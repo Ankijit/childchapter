@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+
+}
+
+.explores img{
+    transition: all 0.5s;
+  }
+  .explores img:hover{
+    transform: scale(1.05);
+  }
+
+header,
+#phoneside {
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+#heading>div>div {
+    font-weight: 900;
+
+}
+
+/* navbar start */
+#bar1,
+#bar2,
+#bar3 {
+    background-color: gray;
+    width: 16px;
+    height: 3px;
+    margin-top: 4px;
+    transition: all 0.5s;
+}
+
+#bar1 {
+    margin: 0;
+}
+
+#fixednavebar {
+    top: 0;
+    /* Adjust as needed */
+    left: 0;
+    /* Adjust as needed */
+    width: 100%;
+}
+
+#fixednavebar ul>div {
+    font-family: 'Playfair Display', serif;
+    ;
+}
+
+#responsiveclosemenu {
+    transition: all 0.3s ease;
+
+}
+
+#responsiveclosemenu #bar1 {
+    transform: rotate(-53deg);
+}
+
+#responsiveclosemenu #bar2 {
+    transform: rotate(51deg);
+    margin: -3px 0 0;
+}
+
+#responsiveopenmenu:hover .bar,
+#responsiveclosemenu:hover .bar {
+    background: white
+}
+
+#menu div {
+    position: relative;
+}
+
+#menu div div>div {
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    height: 100%;
+}
+
+#menu ul {
+    position: absolute;
+    width: 400px;
+    display: none;
+    z-index: 10;
+
+    background: #fff;
+    padding: 20px;
+
+    border: 0.5px solid rgb(191, 187, 187, 0.5);
+    border-left: 0;
+    border-top: 0;
+
+
+
+}
+
+#menu li a:hover {
+    text-decoration: underline;
+}
+
+
+
+#bombaymenu {
+    box-shadow: -20px 0 0 0 #be008c;
+
+
+
+}
+
+#bombaymenu div {
+    color: #be008c;
+}
+
+#mumbaimenu {
+
+    box-shadow: -20px 0 0 0 #01a77b;
+}
+
+#mumbaimenu div {
+    color: #01a77b;
+}
+
+
+#delhimenu {
+
+    box-shadow: -20px 0 0 0 orange;
+
+}
+
+#delhimenu div {
+    color: orange;
+}
+
+#menu ul div {
+    margin-top: 15px;
+    margin-bottom: 23px;
+    font-size: 20px;
+}
+
+#menu ul li {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#sidemenu>div {
+    position: relative;
+    list-style: none;
+    height: 100%;
+}
+
+#sidemenu>div>div {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    height: 100%;
+
+
+}
+
+
+#sidemenu ul {
+    position: absolute;
+    width: 250px;
+    display: none;
+    padding: 0 0 10px 20px;
+    border: 0.5px solid rgb(191, 187, 187, 0.5);
+    background: #f4f4f4;
+    border-top: 0;
+    z-index: 100;
+
+}
+
+#sidemenu ul div {
+    padding: 20px 0 20px 0;
+    font-weight: bold;
+}
+
+#sidemenu ul li {
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+#sidemenu ul li:hover {
+    text-decoration: underline;
+}
+
+/* for menu small */
+
+
+
+#phoneside {
+    background-color: #f4f4f4;
+    transition: all 0.5s;
+}
+
+#phoneside div {
+    cursor: pointer;
+}
+
+#phnmenu>div>div {
+    font-weight: 600;
+}
+
+#phoneside ul {
+    display: none;
+    transition: 0.5 all;
+}
+
+.side {
+    right: 0;
+}
+
+.submenu {
+    font-size: 13px
+}
+
+#phoneside li a:hover {
+    text-decoration: underline;
+
+}
+
+/* menu end */
+.science {
+    background: url('../images/background.jpg');
+}
+
+section button:hover {
+    background: #002b59;
+}
+
+section{
+    margin-bottom: 60px;
+}
+/* team */
+.icon {
+    margin-bottom: 30px;
+}
+
+
+
+
+.persondesp {
+    position: relative;
+}
+
+
+
+.profile {
+    position: absolute;
+    margin-top: 10px;
+    color: white;
+    background-color: rgba(1, 34, 69, 0.8);
+    z-index: 100;
+    padding:1.5rem;
+    height: max-content;
+    width: 250.6px;
+    text-align: center;
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .profile {
+       width: 213px;
+    }
+    
+}
+
+
+/* footer */
+.footermenu ul li:nth-child(1) {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.footermenu ul li {
+    font-size: 13px;
+}
+
+footer li {
+    transition: 0.5 all;
+}
+
+footer li:hover {
+    color: #17d6e3;
+    text-decoration: underline;
+}
+
+.footermenu ul li {
+    margin-bottom: 15px;
+}
+
+.icon i {
+    color: #17d6e3;
+    font-size: 24px;
+}
+
+.icon i:hover {
+    color: white;
+}
+
+.footermenu ul li:nth-child(1) {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.footermenu ul li {
+    font-size: 13px;
+}
+
+footer li {
+    transition: 0.5 all;
+}
+
+footer li:hover {
+    color: #17d6e3;
+    text-decoration: underline;
+}
+
+.footermenu ul li {
+    margin-bottom: 15px;
+}
+
+.icon i {
+    color: #17d6e3;
+    font-size: 24px;
+}
+
+.icon i:hover {
+    color: white;
+}
+
+
+/*  */
